@@ -1,7 +1,7 @@
 {
-  "name": "react_tw_ts_template",
-  "description": "This is a boilerplate build with Vite, React 18, TypeScript, Vitest, Testing Library, TailwindCSS 3, Eslint and Prettier.",
-  "version": "0.1.0",
+  "name": "react_template",
+  "description": "This is a boilerplate build with Vite, React 18, Router, TypeScript, TailwindCSS 3, SCSS, I18next, Axios, zustand, antd, Eslint and Prettier.",
+  "version": "0.0.1",
   "scripts": {
     "dev": "vite --force",
     "build": "tsc && vite build",
