@@ -14,7 +14,7 @@ i18n
       escapeValue: false
     },
     resources: {
-      zh,
+      'zh-CN': zh,
       en
     }
   })

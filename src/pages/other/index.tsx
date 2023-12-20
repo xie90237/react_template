@@ -15,12 +15,13 @@ function HomePage() {
       <h1 className="aa text-4xl font-bold tracking-tight">这是Other</h1>
       <h1 className="bb text-4xl font-bold tracking-tight">这是Other</h1>
       <div className="mt-2 flex space-x-2">
-        <Button onClick={() => i18n.changeLanguage('zh')}>中文</Button>
+        <Button onClick={() => i18n.changeLanguage('zh-CN')}>中文</Button>
         <Button onClick={() => i18n.changeLanguage('en')}>English</Button>
         <Button onClick={() => navigate('/home')}>to home</Button>
         <Button onClick={() => navigate(-1)}>返回</Button>
       </div>
-      <div className="w-full">{t('common.lang')}</div>
+      <div className="w-full">这是国际化: {t('common.lang')}</div>
+      <div className="w-full">这是当前语言: {i18n.language}</div>
     </StyledWapper>
   )
 }

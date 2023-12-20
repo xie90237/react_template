@@ -17,8 +17,7 @@ export default defineConfig({
   server: {
     port: 9002,
     proxy: {
-      // '/dev-api': {
-      //   // target: 'http://192.168.1.101/oa',
+      // '/api': {
       //   target: 'http://192.168.1.101/oa',
       //   changeOrigin: true,
       //   rewrite: (path) => {
