@@ -1,78 +1,44 @@
-# React Tailwindcss Boilerplate build with Vite
+# 这是一个react简易的 全面的 便捷的模板
+> 其中包含了下述框架 并都有相关示例
+- vite
+- react18 + ts
+- react-router
+- axios
+- react-i18next
+- Zustand
+- styled-components
+- antd
 
-This is a boilerplate build with Vite, React 18, TypeScript, Vitest, Testing Library, TailwindCSS 3, Eslint and Prettier.
+> 我的开发环境为
+> node: v18.16.0
+> 包管理工具: yarn
+> 系统: win10
+> 我的开发环境是这个 防止 使用别的版本之类的 产生各种各样的问题 我主要也懒得改 给一个参考
 
-## What is inside?
+## 其他说明
+唔 我已经尽可能的吧所有的示例都放上来了 可以考虑下载下来跑一下看看
 
-This project uses many tools like:
+包括 路由文件的配置 包括 vite的一点简单的配置 比如 proxy啊 启动端口啊 啥的
 
-- [Vite](https://vitejs.dev)
-- [ReactJS](https://reactjs.org)
-- [TypeScript](https://www.typescriptlang.org)
-- [Vitest](https://vitest.dev)
-- [Testing Library](https://testing-library.com)
-- [Tailwindcss](https://tailwindcss.com)
-- [Eslint](https://eslint.org)
-- [Prettier](https://prettier.io)
-
-## Getting Started
-
-### Install
-
-Create the project.
-
-```bash
-npx degit joaopaulomoraes/reactjs-vite-tailwindcss-boilerplate my-app
-```
-
-Access the project directory.
+## 开始
+### 安装
 
 ```bash
-cd my-app
+yarn
 ```
 
-Install dependencies.
+### 运行
 
 ```bash
-pnpm install
+yarn dev
 ```
 
-Serve with hot reload at <http://localhost:5173>.
+### 打包
 
 ```bash
-pnpm run dev
+yarn build
 ```
 
-### Lint
+## 结语
 
-```bash
-pnpm run lint
-```
-
-### Typecheck
-
-```bash
-pnpm run typecheck
-```
-
-### Build
-
-```bash
-pnpm run build
-```
-
-### Test
-
-```bash
-pnpm run test
-```
-
-View and interact with your tests via UI.
-
-```bash
-pnpm run test:ui
-```
-
-## License
-
-This project is licensed under the MIT License.
+没了 真的没了
