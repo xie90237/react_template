@@ -1,6 +1,5 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import { redirect } from 'react-router-dom'
 
 interface userStoreType {
   token: string
