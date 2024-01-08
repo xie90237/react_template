@@ -1,4 +1,4 @@
 import request from 'utils/request'
 
 export const getApi = () =>
-  request('/formetas/game/listH5GamesHead', 'POST', {})
+  request<ServiceType['user']['LoginApi']>('/pre/aa', 'POST', {})

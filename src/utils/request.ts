@@ -2,11 +2,12 @@ import axios, { AxiosRequestConfig, Method } from 'axios'
 import { message as AMessage } from 'antd'
 import { getI18n } from 'react-i18next'
 import { useUserStore } from 'store'
+import globalConfig from 'config'
 
 // 创建axios实例
 const service = axios.create({
   // axios中请求配置有baseURL选项，表示请求URL公共部分
-  baseURL: '/api',
+  baseURL: globalConfig.requestURL,
   // 超时
   timeout: 30000,
   headers: {
@@ -18,7 +19,6 @@ const service = axios.create({
 service.interceptors.request.use(
   (config) => {
     const i18n = getI18n()
-    console.log(i18n.language)
     config.headers['Accept-Language'] = i18n.language || 'en'
 
     const token = useUserStore.getState().token
@@ -58,8 +58,6 @@ service.interceptors.response.use(
     }
 
     const { status, msg, data } = resData
-
-    useUserStore.getState().logout()
     // 处理返回数据
     if (status === 1) {
       return Promise.resolve(data)
@@ -76,15 +74,15 @@ service.interceptors.response.use(
   }
 )
 
-export default (
+export default function request<T = any>(
   url: string,
   method: Method,
   data?: any,
   config?: AxiosRequestConfig
-) => {
+) {
   let reqData: AxiosRequestConfig = { data }
   if (method === 'GET' || method === 'get') reqData = { params: data }
-  return service({
+  return service<any, T>({
     url: url,
     method: method,
     ...reqData,
