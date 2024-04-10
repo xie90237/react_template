@@ -7,7 +7,7 @@
 - react-i18next
 - Zustand
 - styled-components
-- antd
+- antd + tailwindcss + sass
 
 > 我的开发环境为
 > node: v18.16.0
