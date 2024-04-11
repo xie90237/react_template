@@ -10,6 +10,9 @@ import PathParams from 'pages/home/PathParams'
 import SearchParams from 'pages/home/SearchParams'
 import OtherPage from 'pages/other/index'
 
+import ThreePages from 'pages/three/index'
+import Example1 from 'pages/three/Example1'
+
 function App() {
   return (
     <BrowserRouter>
@@ -24,6 +27,10 @@ function App() {
           <Route path="searchParams" element={<SearchParams />} />
         </Route>
         <Route path="/other" element={<OtherPage />} />
+
+        <Route path="/three" element={<ThreePages />}>
+          <Route index element={<Example1 />} />
+        </Route>
         <Route path="*" element={<OtherPage />} />
       </Routes>
     </BrowserRouter>

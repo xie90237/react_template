@@ -29,6 +29,7 @@ function HomePage() {
           search 动态参数
         </Button>
         <Button onClick={() => navigate('/other')}>to other</Button>
+        <Button onClick={() => navigate('/three')}>to threeJs</Button>
         <Button onClick={() => getApi()}>请求</Button>
         <Button onClick={() => navigate(-1)}>返回</Button>
       </div>
